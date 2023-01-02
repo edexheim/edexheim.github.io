@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Eric Dexheimer</title>
+  
+  <meta name="author" content="Eric Dexheimer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Eric Dexheimer</name>
+              </p>
+              <p>
+                I am a PhD student in the Dyson Robotics Lab at Imperial College London, supervised by Prof. Andrew J. Davison.  
+                I am interested in geometric computer vision, probabilistic inference, and nonlinear optimization.
+                Previously, I completed my Masters in Robotics at Carnegie Mellon University under the supervision of Prof. Michael Kaess.
+              </p>
+              <p>
+               
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:e.dexheimer21@imperial.ac.uk">Email</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
+                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=sMsaK0gAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/eric_dexheimer">Twitter</a> 
+                <!-- <a href="https://github.com/jonbarron/">Github</a> -->
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a><img style="width:55%;max-width:55%" alt="profile photo" src="images/eric.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <!-- <p>
+                I'm interested in computer vision, machine learning, optimization, and image processing.
+                Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images.
+                Representative papers are <span class="highlight">highlighted</span>.
+              </p> -->
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="ext_calib_stop()" onmouseover="ext_calib_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle;">
+              <div class="one">
+                <div class="two" id='ext_calib_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/calib.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/calib.jpg' width=240>
+              </div>
+              <script type="text/javascript">
+                function ext_calib_start() {
+                  document.getElementById('ext_calib_image').style.opacity = "1";
+                }
+
+                function ext_calib_stop() {
+                  document.getElementById('ext_calib_image').style.opacity = "0";
+                }
+                ext_calib_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">Information-Theoretic Online Multi-Camera Extrinsic Calibration</papertitle>
+              </a>
+              <br>
+              <text><b>Eric Dexheimer</b>, Patrick Peluse, Jianhui Chen, James Pritts, Michael Kaess</text>
+              <br>
+              <text><em>IEEE Robotics and Automation Letters (RA-L)</em>, presented at </em>ICRA</em> 2022</text>
+              <br>
+              <text>
+                <a href="https://www.cs.cmu.edu/~kaess/pub/Dexheimer22ral.pdf" target="_blank">pdf</a> /
+                <a href="https://github.com/edexheim/info_ext_calib" target="_blank">code</a>
+              </text>
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="gps_denied_stop()" onmouseover="gps_denied_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='gps_denied_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/gps_denied.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/gps_denied.jpg' width=240>
+              </div>
+              <script type="text/javascript">
+                function gps_denied_start() {
+                  document.getElementById('gps_denied_image').style.opacity = "1";
+                }
+
+                function gps_denied_stop() {
+                  document.getElementById('gps_denied_image').style.opacity = "0";
+                }
+                gps_denied_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">GPS-Denied Global Visual-Inertial Ground Vehicle State Estimation via Image Registration</papertitle>
+              </a>
+              <br>
+              <text>Yehonathan Litman*, Daniel McGann*, <b>Eric Dexheimer</b>, Michael Kaess</text>
+              <br>
+              <text><em>IEEE Intl. Conf. on Robotics and Automation, ICRA</em>, May 2022</text>
+              <br>
+              <text>
+                <a href="https://www.cs.cmu.edu/~kaess/pub/Litman22icra.pdf" target="_blank">pdf</a> /
+                <a href="https://www.youtube.com/watch?v=AoWnrB8M5i0" target="_blank">video</a>
+              </text>
+                <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="leo_stop()" onmouseover="leo_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='leo_image'>
+                  <img src='images/leo.gif' width=240>
+                </div>
+                <img src='images/leo.png' width=240>
+              </div>
+              <script type="text/javascript">
+                function leo_start() {
+                  document.getElementById('leo_image').style.opacity = "1";
+                }
+
+                function leo_stop() {
+                  document.getElementById('leo_image').style.opacity = "0";
+                }
+                leo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">LEO: Learning Energy-based Models in Factor Graph Optimization</papertitle>
+              </a>
+              <br>
+              <text>Paloma Sodhi, <b>Eric Dexheimer</b>, Mustafa Mukadam, Stuart Anderson, Michael Kaess</text>
+              <br>
+              <text><em>Proc. Conf. on Robot Learning, CoRL</em>, Nov 2021</text>
+              <br>
+              <text>
+                <a href="https://arxiv.org/abs/2108.02274" target="_blank">arXiv</a> /
+                <a href="https://youtu.be/YqzlUPudfkA" target="_blank">video</a> /
+                <a href="https://github.com/rpl-cmu/leo" target="_blank">code</a> /
+                <a href="https://psodhi.github.io/leo" target="_blank">project page</a> /
+                <a href="https://blog.ml.cmu.edu/2021/12/17/learning-observation-models/" target="_blank">blog</a>
+              </text>
+              <!-- <a href="https://github.com/edexheim/info_ext_calib" target="_blank">code</a> -->
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="subt_stop()" onmouseover="subt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='subt_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/subt.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/subt.jpg' width=240>
+              </div>
+              <script type="text/javascript">
+                function subt_start() {
+                  document.getElementById('subt_image').style.opacity = "1";
+                }
+
+                function subt_stop() {
+                  document.getElementById('subt_image').style.opacity = "0";
+                }
+                subt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">Resilient and Modular Subterranean Exploration with a Team of Roving and Flying Robots</papertitle>
+              </a>
+              <br>
+              <text>Sebastian Scherer et al.</text>
+              <br>
+              <text><em>Field Robotics</em>, May 2022</text>
+              <br>
+              <text>
+                <a href="https://fieldrobotics.net/Field_Robotics/SI_DARPA_SubT_files/Vol2_23.pdf" target="_blank">pdf</a> /
+                <a href="https://www.youtube.com/watch?v=j1NeZ9R0808" target="_blank">video</a>
+              </text>
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="multigrid_stop()" onmouseover="multigrid_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='multigrid_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/multigrid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/multigrid.png' width=240>
+              </div>
+              <script type="text/javascript">
+                function multigrid_start() {
+                  document.getElementById('multigrid_image').style.opacity = "1";
+                }
+
+                function multigrid_stop() {
+                  document.getElementById('multigrid_image').style.opacity = "0";
+                }
+                multigrid_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">Efficient Multiresolution Scrolling Grid for Stereo Vision-based MAV Obstacle Avoidance</papertitle>
+              </a>
+              <br>
+              <text><b>Eric Dexheimer</b>, Joshua G. Mangelson, Sebastian Scherer, and Michael Kaess</text>
+              <br>
+              <text><em>IEEE Intl. Conf. on Intelligent Robots and Systems, IROS</em>, Oct 2020</text>
+              <br>
+              <text>
+                <a href="https://www.cs.cmu.edu/~kaess/pub/Dexheimer20iros.pdf" target="_blank">pdf</a>
+              </text>
+              <!-- <a href="https://www.youtube.com/watch?v=y_lVtT8lJMk" target="_blank">video</a> -->
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="traj_filt_stop()" onmouseover="traj_filt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='traj_filt_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/traj_filt.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/traj_filt.jpg' width=240>
+              </div>
+              <script type="text/javascript">
+                function traj_filt_start() {
+                  document.getElementById('traj_filt_image').style.opacity = "1";
+                }
+
+                function traj_filt_stop() {
+                  document.getElementById('traj_filt_image').style.opacity = "0";
+                }
+                traj_filt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">Efficient Trajectory Library Filtering for Quadrotor Flight in Unknown Environments</papertitle>
+              </a>
+              <br>
+              <text>Vaibhav K. Viswanathan, <b>Eric Dexheimer</b>, Guanrui Li, Giuseppe Loianno, Michael Kaess, and Sebastian Scherer</text>
+              <br>
+              <text><em>IEEE Intl. Conf. on Intelligent Robots and Systems, IROS</em>, Oct 2020</text>
+              <br>
+              <text>
+                <a href="https://www.cs.cmu.edu/~kaess/pub/Viswanathan20iros.pdf" target="_blank">pdf</a> /
+                <a href="https://www.youtube.com/watch?v=y_lVtT8lJMk" target="_blank">video</a>
+              </text>
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Other Projects</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="soccer_stop()" onmouseover="soccer_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='soccer_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/soccer.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/soccer.jpg' width=240>
+              </div>
+              <script type="text/javascript">
+                function soccer_start() {
+                  document.getElementById('soccer_image').style.opacity = "1";
+                }
+
+                function soccer_stop() {
+                  document.getElementById('soccer_image').style.opacity = "0";
+                }
+                soccer_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">Automatic Field Tracking from Video</papertitle>
+              </a>
+              <br>
+              <text><b>Eric Dexheimer</b>, Yingda Hu</text>
+              <br>
+              <!-- <a href="https://www.cs.cmu.edu/~kaess/pub/Dexheimer22ral.pdf" target="_blank">video</a> -->
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="multi_slam_stop()" onmouseover="multi_slam_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='multi_slam_image'>
+                  <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/multi_robot_slam.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/multi_robot_slam.png' width=240>
+              </div>
+              <script type="text/javascript">
+                function multi_slam_start() {
+                  document.getElementById('multi_slam_image').style.opacity = "1";
+                }
+
+                function multi_slam_stop() {
+                  document.getElementById('multi_slam_image').style.opacity = "0";
+                }
+                multi_slam_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle style="color:blue;">Multi-Robot SLAM for Subterranean Environments</papertitle>
+              </a>
+              <br>
+              <text><b>Eric Dexheimer</b></text>
+              <br>
+              <!-- <a href="https://www.cs.cmu.edu/~kaess/pub/Dexheimer22ral.pdf" target="_blank">video</a> -->
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="deep_uv_stop()" onmouseover="deep_uv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='deep_uv_image'>
+                  <img src='images/deep_uv2.png' width=240>
+                </div>
+                <img src='images/deep_uv1.png' width=240>
+              </div>
+              <script type="text/javascript">
+                function deep_uv_start() {
+                  document.getElementById('deep_uv_image').style.opacity = "1";
+                }
+
+                function deep_uv_stop() {
+                  document.getElementById('deep_uv_image').style.opacity = "0";
+                }
+                deep_uv_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://bpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/4/5443/files/2021/06/alireza_deep_UV.pdf" target="_blank">
+                <papertitle style="color:blue;">Deep-UV Microsphere Projection Lithography</papertitle>
+              </a>
+              <br>
+              Alireza Bonakdar, Mohsen Rezaei, Robert L. Brown, Vala Fathipour, <b>Eric Dexheimer</b>, Sung Jun Jang, and Hooman Mohseni
+              <br>
+              <em>Optics Letters</em>, 2015
+              <br> <br>
+              <a href="https://bpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/4/5443/files/2021/09/Bonakdar_2016_Nanotechnology_27_035301.pdf" target="_blank">
+                <papertitle style="color:blue;">High-Throughput Realization of an Infrared Selective Absorber/Emitter by DUV Microsphere Projection Lithography</papertitle>
+              </a>
+              <br>
+              Alireza Bonakdar, Mohsen Rezaei, <b>Eric Dexheimer</b> and Hooman Mohseni
+              <br>
+              <em>Nanotechnology</em>, 2016
+              <!-- <p></p> -->
+              <!-- <p>Scalable calibration...</p> -->
+            </td>
+          </tr>
+        
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <a href="https://github.com/jonbarron/jonbarron_website">Website template source</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
